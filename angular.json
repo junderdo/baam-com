@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "baam-com": {
+    "baam-media": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/baam-com",
+            "outputPath": "dist/baam-media",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "baam-com:build"
+            "browserTarget": "baam-media:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "baam-com:build:production"
+              "browserTarget": "baam-media:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "baam-com:build"
+            "browserTarget": "baam-media:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "baam-com-e2e": {
+    "baam-media-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "baam-com:serve"
+            "devServerTarget": "baam-media:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "baam-com:serve:production"
+              "devServerTarget": "baam-media:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "baam-com"
+  "defaultProject": "baam-media"
 }
