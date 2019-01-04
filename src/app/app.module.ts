@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 
 /* app components */
 import {
+    ArtistBioComponent,
     MediaPlayerComponent
 } from './components';
 
 /* app page components */
 import {
+    HomePageComponent,
     ArtistPageComponent
 } from './pages';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ArtistBioComponent,
     MediaPlayerComponent,
-    ArtistPageComponent
+    HomePageComponent,
+    ArtistPageComponent,
   ],
   imports: [
     BrowserModule,
