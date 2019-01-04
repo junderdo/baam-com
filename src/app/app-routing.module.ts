@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import {
+    ArtistPageComponent
+} from './pages';
+
+const routes: Routes = [
+    { path: 'artist', component: ArtistPageComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
